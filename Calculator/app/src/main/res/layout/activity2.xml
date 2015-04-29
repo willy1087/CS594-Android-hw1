@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:weightSum="1.0"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+
+        <EditText
+
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="end"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="end"
+        android:layout_marginBottom="10dp">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:weightSum="1.0">
+
+
+        <Button
+            android:id="@+id/sin"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:background="@color/button_box"
+            android:text="sin"
+            android:textAllCaps="false"
+            android:textSize="40sp"
+
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/cos"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:background="@color/button_box"
+            android:text="cos"
+            android:textAllCaps="false"
+            android:textSize="40sp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/tan"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:background="@color/button_box"
+            android:text="tan"
+            android:textAllCaps="false"
+            android:textSize="40sp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/imaginary"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:background="@color/button_operator"
+            android:textAllCaps="false"
+            android:textSize="40sp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:weightSum="1.0">
+
+
+        <Button
+            android:id="@+id/ln"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:background="@color/button_box"
+            android:text="ln"
+            android:textAllCaps="false"
+            android:textSize="45sp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/log"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/button_box"
+            android:text="log"
+            android:textAllCaps="false"
+            android:textSize="45sp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/pi"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/button_box"
+            android:text="\u03C0"
+            android:textAllCaps="false"
+            android:textSize="45sp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/e"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/button_operator"
+            android:text="e"
+            android:textAllCaps="false"
+            android:textSize="45sp"
+            >
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:weightSum="1.0">
+
+        <Button
+            android:id="@+id/percentage"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/button_box"
+            android:text="%"
+            android:textAllCaps="false"
+            android:textSize="45sp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/factorial"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/button_box"
+            android:text="!"
+            android:textAllCaps="false"
+            android:textSize="45sp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/radical"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/button_box"
+            android:text="\u221A"
+            android:textSize="45sp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/caret"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/button_operator"
+            android:text="\u2038"
+            android:textAllCaps="false"
+            android:textSize="45sp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:weightSum="1.0">
+
+        <Button
+            android:id="@+id/leftparen"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/button_box"
+            android:textAllCaps="false"
+            android:textSize="45sp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/rightparen"
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/button_box"
+            android:textAllCaps="false"
+            android:textSize="45sp"
+            >
+        </Button>
+        <Button
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/button_box"
+            android:textSize="45sp"
+            >
+        </Button>
+        <Button
+            android:layout_height="90dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/button_operator"
+            android:textSize="45sp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
