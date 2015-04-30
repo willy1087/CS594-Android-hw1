@@ -413,7 +413,7 @@ public class MainActivity extends ActionBarActivity{
                 intent.putExtra("ope",operation);
             }
 
-
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             return true;
 

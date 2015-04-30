@@ -222,6 +222,7 @@ public class Activity2 extends ActionBarActivity{
             number = Double.valueOf(twoDForm.format(number));
             intent.putExtra("output", number);
 
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             //leave this activity
         }else {
@@ -238,7 +239,7 @@ public class Activity2 extends ActionBarActivity{
                 intent.putExtra("first",first);
             }
 
-
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
 
@@ -312,6 +313,7 @@ public class Activity2 extends ActionBarActivity{
                 intent.putExtra("first",first);
             }
 
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             return true;
 
